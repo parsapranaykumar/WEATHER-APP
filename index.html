@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body class="bg-info-subtle">
+    
+    <h1 class="fst-italic"><i class="bi bi-snow2 fs-2 text-primary"></i>IndWeather.</h1>
+
+    <form class="row" onsubmit="getData(event);" name="SearchData">
+        <div class="col-9">
+            <input type="text" class="form-control"placeholder="Search city..." name="textBox">
+        </div>
+        <div class="col-3">
+            <input type="submit" class="btn btn-outline-info" style="width:100%;" value="Search" id="Btn">
+        </div>
+
+
+    </form>
+
+     <!-- currrent  -->
+       <div class="containerCurrent" style="max-width: 80%;">
+    
+       <div class="row" id="currrentRef">
+         <!--html data form js -->
+
+
+
+
+        </div>
+        </div>
+    
+
+    <!--hours-->
+    <div class="containerHour" style="max-width: 100%;">
+       
+        <div class="row text-center" id="hoursRef">
+             <!--html data form js -->
+           
+
+        </div>
+
+    </div>
+
+     <!--3 days forecast-->
+    <div class="forecast-row" id ="daysRef">
+
+    
+
+        <!--html data from js-->
+       
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
